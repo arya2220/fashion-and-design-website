@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Savana Fashion</title>
+    <link rel="stylesheet" href="mse.css">
+</head>
+
+<body>
+
+    <div class="offer">
+        FLAT 50% OFF | SHOP NOW
+    </div>
+
+    <header>
+        <h1>SAVANA</h1>
+
+        <input type="text" id="search"
+               placeholder="Search products">
+
+        <button onclick="searchProduct()">Search</button>
+        <button onclick="showCart()">Cart</button>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">New Arrivals</a>
+        <a href="#products">Dresses</a>
+        <a href="#products">Tops</a>
+        <a href="#products">Jeans</a>
+    </nav>
+
+    <section class="hero">
+        <h2>YOUR STYLE, YOUR STORY</h2>
+        <p>Discover your favourite fashion</p>
+        <a href="#products">
+            <button>SHOP NOW</button>
+        </a>
+    </section>
+
+
+    <h2 class="heading" id="products">OUR COLLECTION</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="https://img201.savana.com/goods-pic/91dd20fae64e4c5d87b9015bfb0ecbc7_w540_h720_q85">
+            <h3>Black Dress</h3>
+            <p>₹799</p>
+            <button onclick="addToCart('Black Dress', 799)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="https://img201.savana.com/goods-pic/953bb09595774f0dae8fa194a5e50ab2_w540_h720_q85">
+            <h3>Wide Leg Jeans</h3>
+            <p>₹999</p>
+            <button onclick="addToCart('Wide Leg Jeans', 999)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="https://img201.savana.com/goods-pic/47ad182c1def46f78c671506bb02eb7b_w540_h720_q85">
+            <h3>Stylish Blouse</h3>
+            <p>₹599</p>
+            <button onclick="addToCart('Stylish Blouse', 599)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product">
+            <img src="https://img201.savana.com/goods-pic/efed3d0684a245fb8bd0992b57ad4886_w540_h720_q85">
+            <h3>Bodycon Dress</h3>
+            <p>₹899</p>
+            <button onclick="addToCart('Bodycon Dress', 899)">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+    <section class="cart">
+        <h2>Your Shopping Cart</h2>
+        <p id="cartItems">No products added.</p>
+        <p id="total">Total: ₹0</p>
+        <button onclick="clearCart()">Clear Cart</button>
+    </section>
+
+    <footer>
+        <h2>SAVANA</h2>
+        <p>Fashion for every mood.</p>
+        <p>© 2026 Savana Fashion Website</p>
+    </footer>
+
+    
+
+</body>
+</html>
